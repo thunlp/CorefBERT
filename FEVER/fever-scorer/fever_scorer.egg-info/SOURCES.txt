@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+fever_scorer.egg-info/PKG-INFO
+fever_scorer.egg-info/SOURCES.txt
+fever_scorer.egg-info/dependency_links.txt
+fever_scorer.egg-info/requires.txt
+fever_scorer.egg-info/top_level.txt
+src/fever/__init__.py
+src/fever/scorer.py

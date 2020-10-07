@@ -1,0 +1,24 @@
+language: python
+python:
+  - "2.7"
+  - "3.6"
+before_install:
+  - . version.sh
+install:
+  - sudo apt-get update
+  - python setup.py install
+script:
+  - cd tests
+  - python -m unittest discover --verbose --start-directory .
+  - cd ..
+before_deploy:
+  - python setup.py sdist
+deploy:
+  provider: pypi
+  user: $DEPLOY_PYPI_USER
+  password: $DEPLOY_PYPI_PASS
+  skip_existing: true
+  skip_cleanup: true
+  on:
+    all_branches: true
+    condition: $TRAVIS_BRANCH == release-*
