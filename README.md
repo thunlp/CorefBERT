@@ -2,7 +2,7 @@
 
 Source code and dataset for "[Coreferential Reasoning Learning for Language Representation](https://arxiv.org/abs/2004.06870)".
 
-![model](https://github.com/thunlp/CorefBERT/blob/master/model.png)
+![model](https://github.com/thunlp/CorefBERT/blob/master/model.jpg)
 
 
 The code is based on huggaface's [transformers](https://github.com/huggingface/transformers). Thanks to them!
