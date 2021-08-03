@@ -73,12 +73,12 @@ def train_model(model, ori_model, args, trainset_reader, validset_reader):
             if args.gradient_accumulation_steps > 1:
                loss = loss / args.gradient_accumulation_steps
             loss.backward()
-            torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
 
             global_step += 1
             running_loss += loss.item()
 
             if global_step % args.gradient_accumulation_steps == 0:
+                torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
                 optimizer.step()
                 scheduler.step()  # Update learning rate schedule
                 model.zero_grad()
