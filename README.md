@@ -154,7 +154,7 @@ If you use the code, please cite this paper:
 ```
 @inproceedings{ye2020corefbert,
   title={Coreferential Reasoning Learning for Language Representation},
-  author={Deming Ye, Yankai Lin, Jiaju Du, Zhenghao Liu, Peng Li, Maosong Sun, Zhiyuan Liu},
+  author={Deming Ye and Yankai Lin and Jiaju Du and Zhenghao Liu and Peng Li and Maosong Sun and Zhiyuan Liu},
   booktitle={Proceedings of EMNLP 2020},
   year={2020}
 }
