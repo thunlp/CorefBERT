@@ -153,9 +153,27 @@ If you use the code, please cite this paper:
 
 ```
 @inproceedings{ye2020corefbert,
-  title={Coreferential Reasoning Learning for Language Representation},
-  author={Deming Ye and Yankai Lin and Jiaju Du and Zhenghao Liu and Peng Li and Maosong Sun and Zhiyuan Liu},
-  booktitle={Proceedings of EMNLP 2020},
-  year={2020}
+  author    = {Deming Ye and
+               Yankai Lin and
+               Jiaju Du and
+               Zhenghao Liu and
+               Peng Li and
+               Maosong Sun and
+               Zhiyuan Liu},
+  editor    = {Bonnie Webber and
+               Trevor Cohn and
+               Yulan He and
+               Yang Liu},
+  title     = {Coreferential Reasoning Learning for Language Representation},
+  booktitle = {Proceedings of the 2020 Conference on Empirical Methods in Natural
+               Language Processing, {EMNLP} 2020, Online, November 16-20, 2020},
+  pages     = {7170--7186},
+  publisher = {Association for Computational Linguistics},
+  year      = {2020},
+  url       = {https://doi.org/10.18653/v1/2020.emnlp-main.582},
+  doi       = {10.18653/v1/2020.emnlp-main.582},
+  timestamp = {Wed, 23 Mar 2022 10:11:55 +0100},
+  biburl    = {https://dblp.org/rec/conf/emnlp/YeLDLLSL20.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 ```
