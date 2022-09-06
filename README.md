@@ -63,7 +63,7 @@ We further design two components accounting for coreferential reasoning and mult
 
 Train:
 ```
-CUDA_VISIBLE_DEVICES=0,1,2,3 python run_squad.py --do_train --evaluate_during_training --model_type bert --model_name_or_path ../CorefBERT_base --train_file quoref_data/quoref-train-v0.1.json --predict_file quoref_data/quoref-dev-v0.1.json --per_gpu_train_batch_size 8 --per_gpu_eval_batch_size 16  --learning_rate 2e-5 --num_train_epochs 6 --max_seq_length 512 --doc_stride 128 --save_steps 884 --max_n_answers 2 --output_dir QUOREF_CorefBERT_base
+CUDA_VISIBLE_DEVICES=0,1,2,3 python run_squad.py --do_train --evaluate_during_training --model_type bert_multi --model_name_or_path ../CorefBERT_base --train_file quoref_data/quoref-train-v0.1.json --predict_file quoref_data/quoref-dev-v0.1.json --per_gpu_train_batch_size 8 --per_gpu_eval_batch_size 16  --learning_rate 2e-5 --num_train_epochs 6 --max_seq_length 512 --doc_stride 128 --save_steps 884 --max_n_answers 2 --output_dir QUOREF_CorefBERT_base
 ```
 
 Evaluate:
